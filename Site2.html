@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-skate</title>
+
+    <!--lien CSS-->
+
+    <link rel="stylesheet" href="Style2.css">
+
+    <!--Swiper CSS-->
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" class="">
+
+    <!--boite lien vers les polices d'ecritures-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo1">
+                logo
+            </div>
+        </div>
+        <div class="button"></div>
+        <ul class="menu">
+            <li><a href="Site.html">Acceuil</a></li>
+            <li><a href="#">Model</a></li>
+            <li><a href="Site3.html">Information</a></li>
+            <li><a href="Site4.html">Contact</a></li>
+        </ul>
+    </header>
+    <script>
+        var button = document.querySelector('.button');
+        var menu = document.querySelector('.menu');
+
+        button.onclick = function(){
+            button.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+
+    </script>
+    <section class="centre">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="image/card1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        
+                        <div class="card-content">
+                            <h2 class="name">Skatboard Classic</h2>
+                            <p class="description">
+                                Planche fine et facile à transporter, les roux son entre 55 et 53cm.
+                                Elle est favorable pour les Triks (figure).
+                            </p>
+
+                            <button class="buton">Plus d'info ?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+</body>
+
+<!--Swiper JS-->
+<script src="swiper-bundle.min js.js"></script>
+
+<!--lien JS-->
+<script src="Style.js"></script>
+</html>
